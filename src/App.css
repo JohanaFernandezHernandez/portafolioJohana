@@ -1,0 +1,131 @@
+.container1 {
+  margin: 0 auto;
+}
+
+.container_inicio {
+  margin: 0 auto;
+  max-width: 1200px; /* Ajusta el valor según tus necesidades */
+  padding: 20px; /* Ajusta el valor según tus necesidades */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3vw; /* Ajusta el valor según tus necesidades */
+}
+.container_inicio h3{
+  font-size: xx-large;
+  font-weight: bold;
+  
+}
+
+.imagen1 {
+  border-radius: 20px;
+  box-shadow: -4px 10px 13px 1px;
+
+}
+
+.container_text h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container_text span {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #9353d3;
+  font-weight: 600;
+  
+}
+.container_text p {
+  margin-bottom: 15px;
+}
+
+.container_button {
+  display: flex;
+  gap: 50px;
+}
+
+.redes {
+  margin-right: 20px;
+}
+
+.proyectos {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 2px;
+}
+.container_card {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.image_card2 {
+  width: 374px;
+  height: auto;
+  /* max-height: 160px; */
+  margin: 0 auto;
+}
+
+.proyectos :hover{
+  box-shadow: 0px 0px 30px #9353d3;
+  transform: scale(1.01);
+  transition: 0.5s;
+
+}
+
+.imagen_tecnologias{
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* box-shadow: 0px 0px 5px #9353d3; */
+
+}
+.imagen_tecnologias:hover{
+  box-shadow: 0px 0px 50px #9353d3;
+  transform: scale(1.2);
+  transition: 0.5s;
+
+}
+
+.container_tecnologias{
+  display: grid ;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)) ;
+  gap: 60px;
+  align-items: center;
+
+}
+
+
+/* //MEDIA QUERIS */
+@media screen and (max-width: 480px) {
+  .container_inicio {
+    flex-direction: column;
+    align-items: flex-start; /* O ajusta según tus necesidades de alineación en columna */
+  }
+}
+
+/* CSS FOOTERAPP */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 5px;
+  /* background-color: #27272A ; */
+  border-top: 0.5px solid #FFFFFF ;
+  
+
+}
+
+.footer span{
+  color: #9353d3;
+  font-size: medium;
+  font-weight: 600;
+
+}
+
