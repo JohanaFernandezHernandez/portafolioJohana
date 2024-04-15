@@ -12,16 +12,14 @@
   justify-content: center;
   column-gap: 3vw; /* Ajusta el valor según tus necesidades */
 }
-.container_inicio h3{
+.container_inicio h3 {
   font-size: xx-large;
   font-weight: bold;
-  
 }
 
 .imagen1 {
   border-radius: 20px;
   box-shadow: -4px 10px 13px 1px;
-
 }
 
 .container_text h1 {
@@ -34,7 +32,6 @@
   font-size: 20px;
   color: #9353d3;
   font-weight: 600;
-  
 }
 .container_text p {
   margin-bottom: 15px;
@@ -49,55 +46,69 @@
   margin-right: 20px;
 }
 
+/* Cards De Proyectos */
+
 .proyectos {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2px;
 }
 .container_card {
   border-radius: 8px;
   width: 100%;
-  height: auto;
+  height: 376px;
   margin: 0 auto;
+  overflow: hidden;
+  border-top-width: none;
+  box-sizing: border-box;
+}
+.container_card:hover {
+  box-shadow: 2px 4px 16px #9455d3;
+  transform: scale3d(1.01, 1.01, 1.01);
+  transition: 0.5s;
+}
+
+.container_imagen {
+  height: 226px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .image_card2 {
-  width: 374px;
-  height: auto;
-  /* max-height: 160px; */
-  margin: 0 auto;
+  height: 226px;
+  object-fit: cover;
 }
 
-.proyectos :hover{
-  box-shadow: 0px 0px 30px #9353d3;
-  transform: scale(1.01);
-  transition: 0.5s;
 
+.descripcion_card {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* Mostrar solo 2 líneas de texto */
+  line-height: 1.5;
 }
 
-.imagen_tecnologias{
+/* css tecnologias */
+
+.imagen_tecnologias {
   border-radius: 10px;
   width: 100%;
   height: auto;
   overflow: hidden;
-  /* box-shadow: 0px 0px 5px #9353d3; */
-
 }
-.imagen_tecnologias:hover{
-  box-shadow: 0px 0px 50px #9353d3;
-  transform: scale(1.2);
+
+.imagen_tecnologias:hover {
+  box-shadow: 0px 0px 20px #9455d3;
+  transform: scale(1.1);
   transition: 0.5s;
-
 }
 
-.container_tecnologias{
-  display: grid ;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)) ;
+.container_tecnologias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
   gap: 60px;
   align-items: center;
-
 }
-
 
 /* //MEDIA QUERIS */
 @media screen and (max-width: 480px) {
@@ -109,7 +120,7 @@
 
 /* CSS FOOTERAPP */
 
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,15 +128,11 @@
   padding-bottom: 20px;
   gap: 5px;
   /* background-color: #27272A ; */
-  border-top: 0.5px solid #FFFFFF ;
-  
-
+  border-top: 0.5px solid #ffffff;
 }
 
-.footer span{
+.footer span {
   color: #9353d3;
   font-size: medium;
   font-weight: 600;
-
 }
-

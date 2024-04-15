@@ -33,6 +33,11 @@ export const App = () => {
     <h3 className="container_inicio"> Mis Proyectos...</h3>
 
     <CardsProyects/>
+
+    <br/>
+    <h3 className="container_inicio"> Estudios Realizados</h3>
+
+
     
     <FooterApp/>
 
